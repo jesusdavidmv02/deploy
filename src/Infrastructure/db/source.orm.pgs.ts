@@ -12,7 +12,6 @@ const dbSSL  = config.get<boolean>("SSL");
 
 console.log( "--------" +    config.get<string>("HOST"))
 console.log( "--------" +    config.get<number>("DB_PORT"))
-
 console.log( "--------" +    config.get<string>("USER"))
 console.log( "--------" +    config.get<string>("PASSWORD"))
 console.log( "--------" +    config.get<string>("DATABASE"))
