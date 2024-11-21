@@ -35,6 +35,6 @@ export const AppDataSourcePgs = new DataSource({
   synchronize: true,
   logging: true,
   extra: {
-    connectionTimeoutMillis: 10000,  // Establecer tiempo de espera de conexión en milisegundos
+    connectTimeoutMS: 30000, // Aumenta el timeout a 30 segundos
   },
 });
