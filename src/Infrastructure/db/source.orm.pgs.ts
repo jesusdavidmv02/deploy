@@ -33,8 +33,8 @@ export const AppDataSourcePgs = new DataSource({
      CategoriaEntity,
     ],
   synchronize: true,
-  // logging: true,
+  logging: true,
   extra: {
-    connectionTimeoutMillis: 5000,  // Establecer tiempo de espera de conexión en milisegundos
+    connectionTimeoutMillis: 10000,  // Establecer tiempo de espera de conexión en milisegundos
   },
 });
