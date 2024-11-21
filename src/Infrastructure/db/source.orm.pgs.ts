@@ -10,12 +10,12 @@ import { CategoriaEntity } from "../../domain/Entities/categorias.Entity";
 
 const dbSSL  = config.get<boolean>("SSL");
 
-console.log("Conexión configurada con los siguientes parámetros:");
-console.log(`Host: ${process.env.PGHOST}`);
-console.log(`Puerto: ${process.env.PGPORT}`);
-console.log(`Usuario: ${process.env.USER}`);
-console.log(`Contraseña: ${process.env.PASSWORD}`);
-console.log(`Base de datos: ${process.env.DATABASE}`);
+console.log( "--------" +    config.get<string>("HOST"))
+console.log( "--------" +    config.get<number>("DB_PORT"))
+
+console.log( "--------" +    config.get<string>("USER"))
+console.log( "--------" +    config.get<string>("PASSWORD"))
+console.log( "--------" +    config.get<string>("DATABASE"))
 
 export const AppDataSourcePgs = new DataSource({
   type: "postgres",

@@ -38,10 +38,6 @@ const createServer = async () => {
     app.listen(PORT, () => {
       console.log(`Servidor Api-Rest ejecutando: http://localhost:${PORT}`);
     });
-
-    // app.listen(8080, "0.0.0.0", () => {
-    //   console.log(`Servidor Api-Rest ejecutando: http://localhost:8080`);
-    // });
   } 
   catch (error) {
     console.error(error);
