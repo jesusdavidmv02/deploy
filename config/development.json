@@ -3,6 +3,6 @@
   "PORT" : "5432",
   "USER": "postgres",
   "PASSWORD": "LiTgbvkvUrVuRsmPgzFdkFrneYiiYvFp", 
-  "DATABASE": "railwa",
+  "DATABASE": "railway0001",
   "SSL": true
 }
