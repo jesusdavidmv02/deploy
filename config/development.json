@@ -1,0 +1,8 @@
+{
+  "HOST": "autorack.proxy.rlwy.net",
+  "PORT" : "36534",
+  "USER": "postgres",
+  "PASSWORD": "LiTgbvkvUrVuRsmPgzFdkFrneYiiYvFp", 
+  "DATABASE": "railway",
+  "SSL": true
+}

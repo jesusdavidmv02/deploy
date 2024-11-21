@@ -1,0 +1,21 @@
+config --> development.json  -- / no me coje la varible de entorno 
+// credenciales para pruebas --> postgres
+{
+  "HOST": "dpg-csqd3pl6l47c73b29lrg-a.oregon-postgres.render.com",
+  "PORT" : "5432",
+  "USER": "root",
+  "PASSWORD": "Qb29z8VKKLXZ3MFDrK456rZXHleeLgEt", 
+  "DATABASE": "aerolinea_605z",
+  "SSL": true
+}
+
+{
+  "HOST": "autorack.proxy.rlwy.net",
+  "PORT" : "36534", //  5432
+  "USER": "postgres",
+  "PASSWORD": "LiTgbvkvUrVuRsmPgzFdkFrneYiiYvFp", 
+  "DATABASE": "railway",
+  "SSL": true
+}
+
+
