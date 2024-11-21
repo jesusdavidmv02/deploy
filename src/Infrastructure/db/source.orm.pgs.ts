@@ -14,7 +14,7 @@ console.log("Conexión configurada con los siguientes parámetros:");
 console.log(`Host: ${process.env.PGHOST}`);
 console.log(`Puerto: ${process.env.PGPORT}`);
 console.log(`Usuario: ${process.env.USER}`);
-console.log(`Contraseña: ${process.env.PGPASSWORD}`);
+console.log(`Contraseña: ${process.env.PASSWORD}`);
 console.log(`Base de datos: ${process.env.DATABASE}`);
 
 export const AppDataSourcePgs = new DataSource({
