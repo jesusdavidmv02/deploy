@@ -18,14 +18,12 @@ console.log(`Contraseña: ${process.env.PASSWORD}`);
 console.log(`Base de datos: ${process.env.DATABASE}`);
 
 export const AppDataSourcePgs = new DataSource({
-  type: 'postgres',
-  host: process.env.PGHOST, // o utilizar `RAILWAY_PRIVATE_DOMAIN`
-  port: Number(process.env.PGPORT), // Generalmente es 5432
-  username: process.env.USER, // Tu usuario de PostgreSQL
-  password: process.env.PASSWORD, // Tu contraseña de PostgreSQL
-  database: process.env.DATABASE, // Nombre de tu base de datos
-  synchronize: true,
-
+  type: "postgres",
+  host: config.get<string>("HOST"),
+  port: config.get<number>("DB_PORT"),
+  username: config.get<string>("USER"),
+  password: config.get<string>("PASSWORD"),
+  database: config.get<string>("DATABASE"),
   ssl: dbSSL ? { rejectUnauthorized: false } : false,
   entities: [VueloEntity ,
      PasajeroEntity ,
@@ -34,7 +32,6 @@ export const AppDataSourcePgs = new DataSource({
      PreciosTemporalesEntity, 
      CategoriaEntity,
     ],
-  extra: {
-    connectTimeoutMS: 30000, // Aumenta el timeout a 30 segundos
-  },
+  synchronize: true,
+  connectTimeoutMS: 10000, // 10 segundos
 });
