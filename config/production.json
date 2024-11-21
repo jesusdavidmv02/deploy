@@ -1,7 +1,15 @@
 {
-  "HOST": "dpg-csn2932j1k6c73dqmovg-a.oregon-postgres.render.com",
-  "USER": "aerolinea_wdz4_user",
-  "PASSWORD": "pmFe3OyqM3VoHx5Wvt5RuYPG1sUu7gly", 
-  "DATABASE": "aerolinea_wdz4",
+  "DATABASE_PUBLIC_URL": "postgresql://${{PGUSER}}:${{POSTGRES_PASSWORD}}@${{RAILWAY_TCP_PROXY_DOMAIN}}:${{RAILWAY_TCP_PROXY_PORT}}/${{PGDATABASE}}",
+  "DATABASE_URL": "postgresql://${{PGUSER}}:${{POSTGRES_PASSWORD}}@${{RAILWAY_PRIVATE_DOMAIN}}:5432/${{PGDATABASE}}",
+  "PGDATA": "/var/lib/postgresql/data/pgdata",
+  "PGDATABASE": "${{POSTGRES_DB}}",
+  "PGHOST": "${{RAILWAY_PRIVATE_DOMAIN}}",
+  "PGPASSWORD": "${{POSTGRES_PASSWORD}}",
+  "PGPORT": "5432",
+  "PGUSER": "${{POSTGRES_USER}}",
+  "POSTGRES_DB": "railway",
+  "PASSWORD": "maTdsINPLJVJpSiPQxNWyAXUeiiKHWzx",
+  "POSTGRES_USER": "postgres",
+  "SSL_CERT_DAYS": "820",
   "SSL": true
 }
