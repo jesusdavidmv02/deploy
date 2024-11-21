@@ -33,7 +33,6 @@ export const AppDataSourcePgs = new DataSource({
      CategoriaEntity,
     ],
   synchronize: true,
-  logging: true,
   extra: {
     connectTimeoutMS: 30000, // Aumenta el timeout a 30 segundos
   },
