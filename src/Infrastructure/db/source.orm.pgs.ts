@@ -10,12 +10,12 @@ import { CategoriaEntity } from "../../domain/Entities/categorias.Entity";
 
 const dbSSL  = config.get<boolean>("SSL");
 
-console.log( "--------" +    config.get<string>("HOST"))
-console.log( "--------" +    config.get<number>("DB_PORT"))
+// console.log( "--------" +    config.get<string>("HOST"))
+// console.log( "--------" +    config.get<number>("DB_PORT"))
 
-console.log( "--------" +    config.get<string>("USER"))
-console.log( "--------" +    config.get<string>("PASSWORD"))
-console.log( "--------" +    config.get<string>("DATABASE"))
+// console.log( "--------" +    config.get<string>("USER"))
+// console.log( "--------" +    config.get<string>("PASSWORD"))
+// console.log( "--------" +    config.get<string>("DATABASE"))
 
 export const AppDataSourcePgs = new DataSource({
   type: "postgres",
@@ -34,4 +34,5 @@ export const AppDataSourcePgs = new DataSource({
     ],
   synchronize: true,
   connectTimeoutMS: 10000, // 10 segundos
+  logging: true,
 });
