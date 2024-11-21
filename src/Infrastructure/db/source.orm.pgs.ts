@@ -13,17 +13,17 @@ const dbSSL  = config.get<boolean>("SSL");
 console.log("Conexión configurada con los siguientes parámetros:");
 console.log(`Host: ${process.env.PGHOST}`);
 console.log(`Puerto: ${process.env.PGPORT}`);
-console.log(`Usuario: ${process.env.PGUSER}`);
+console.log(`Usuario: ${process.env.USER}`);
 console.log(`Contraseña: ${process.env.PGPASSWORD}`);
-console.log(`Base de datos: ${process.env.PGDATABASE}`);
+console.log(`Base de datos: ${process.env.DATABASE}`);
 
 export const AppDataSourcePgs = new DataSource({
   type: 'postgres',
   host: process.env.PGHOST, // o utilizar `RAILWAY_PRIVATE_DOMAIN`
   port: Number(process.env.PGPORT), // Generalmente es 5432
-  username: process.env.PGUSER, // Tu usuario de PostgreSQL
-  password: process.env.PGPASSWORD, // Tu contraseña de PostgreSQL
-  database: process.env.PGDATABASE, // Nombre de tu base de datos
+  username: process.env.USER, // Tu usuario de PostgreSQL
+  password: process.env.PASSWORD, // Tu contraseña de PostgreSQL
+  database: process.env.DATABASE, // Nombre de tu base de datos
   synchronize: true,
 
   ssl: dbSSL ? { rejectUnauthorized: false } : false,
