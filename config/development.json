@@ -1,7 +1,7 @@
 {
   "HOST": "postgres.railway.internal",
   "PORT": "5432",
-  "DATABASE": "railway  viene de aca",
+  "DATABASE": "railway",
   "USER": "postgres",
   "PASSWORD": "maTdsINPLJVJpSiPQxNWyAXUeiiKHWzx",
   "SSL_CERT_DAYS": "820",
