@@ -34,9 +34,13 @@ const createServer = async () => {
     app.use("/api/v1", routes());
     app.use(middleware404);
 
-    const PORT = process.env.PORT || 3000;
-    app.listen(PORT, () => {
-      console.log(`Servidor Api-Rest ejecutando: http://localhost:${PORT}`);
+    // const PORT = process.env.PORT || 3000;
+    // app.listen(PORT, () => {
+    //   console.log(`Servidor Api-Rest ejecutando: http://localhost:${PORT}`);
+    // });
+
+    app.listen(8080, "0.0.0.0", () => {
+      console.log(`Servidor Api-Rest ejecutando: http://localhost:8080`);
     });
   } 
   catch (error) {
